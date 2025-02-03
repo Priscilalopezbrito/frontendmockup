@@ -27,11 +27,18 @@ links.forEach(link =>{
 
 document.addEventListener("DOMContentLoaded", function () {
     const loginButton = document.querySelector(".btn button"); // Select the login button
+    const logoutButton = document.querySelector("#logoutBtn"); // Select the logout button
 
     if (loginButton) {
         loginButton.addEventListener("click", function (event) {
             event.preventDefault(); // Prevent default form submission
             window.location.href = "../dashboard/Billmapmainpage.html"; // Redirect to the main dashboard
+        });
+    }
+
+    if (logoutButton) {
+        logoutButton.addEventListener("click", function () {
+            window.location.href = "../login/login.html"; // Redirect to login page
         });
     }
 });
