@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Mockup</title>
+    <link rel="stylesheet" href="../css/Billmapmainpage.css">
+    <link rel="icon" type="image/png" href="../../images/faviconbillmap.png">
+    <style>
+        .bill-section.overdue {
+            background-color: #f8d7da;
+            border-left: 5px solid #dc3545;
+            padding: 10px;
+        }
+        .bill-section.paid {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 10px;
+        }
+        .bill-section.upcoming {
+            background-color: #cce5ff;
+            border-left: 5px solid #007bff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <img src="../../images/Billmaplogo.png" alt="Billmap Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="bills.html">Bill Management</a></li>
+                <li><a href="payments.html">Payments</a></li>
+                <li><a href="account.html">Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="dashboard">
+        <header>
+            <h4>Welcome back</h4>
+            <div class="header-right">
+                <button id="logoutBtn" class="logout">Logout</button>
+            </div>
+        </header>
+        <section class="calendar-container">
+            <h3>Calendar</h3>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button id="prevMonth">&#10094;</button>
+                    <span id="currentMonthYear"></span>
+                    <button id="nextMonth">&#10095;</button>
+                </div>
+                <div class="calendar-grid" id="calendarGrid"></div>
+            </div>
+        </section>
+        <section class="bills-container">
+            <h3>Your Bills</h3>
+            <div class="bill-section overdue">
+                <h4>Overdue!</h4>
+                <div class="bill-item">
+                    <p><strong>2025-02-05</strong> - Electric bill</p>
+                    <p>$75.00</p>
+                </div>
+            </div>
+            <div class="bill-section paid">
+                <h4>Paid!</h4>
+                <div class="bill-item">
+                    <p><strong>2025-02-10</strong> - Water bill</p>
+                    <p>$40.00</p>
+                </div>
+                <div class="bill-item">
+                    <p><strong>2025-02-10</strong> - Internet bill</p>
+                    <p>$55.00</p>
+                </div>
+            </div>
+            <div class="bill-section upcoming">
+                <h4>Upcoming</h4>
+                <div class="bill-item">
+                    <p><strong>2025-02-15</strong> - Phone bill</p>
+                    <p>$45.00</p>
+                </div>
+                <div class="bill-item">
+                    <p><strong>2025-02-20</strong> - Car payment</p>
+                    <p>$300.00</p>
+                </div>
+                <div class="bill-item">
+                    <p><strong>2025-02-25</strong> - Rent</p>
+                    <p>$1000.00</p>
+                </div>
+                <div class="bill-item">
+                    <p><strong>2025-02-25</strong> - Credit Card</p>
+                    <p>$200.00</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 Bill MAP. All rights reserved.</p>
+        </footer>
+    </main>
+</div>
+<script src="../../login/script.js"></script>
+<script src="../js/Billmapmainpage.js"></script>
+<script src="../js/billcalendar.js"></script>
+</body>
+</html>

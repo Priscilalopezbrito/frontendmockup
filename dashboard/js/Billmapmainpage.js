@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Sidebar navigation click event to change pages
     const menuItems = document.querySelectorAll(".sidebar nav ul li a");
     const pageMapping = {
-        "Home": "home.html",
+        "Home": "Billmapmainpage.html",
         "Calendar": "calendar.html",
-        "Bills": "bills.html",
+        "Bill Management": "bills.html",
         "Payments": "payments.html",
-        "Account": "account.html"
+        "Settings": "account.html"
     };
 
     menuItems.forEach(item => {
