@@ -19,7 +19,7 @@
 .logo {
     display: block;
     margin: 10px auto; /* Adjust spacing */
-    width: 140px;  /* Slightly larger for better balance */
+    width: 190px;  /* Slightly larger for better balance */
     height: auto;  /* Keep aspect ratio */
     max-width: 80%; /* Prevents it from being too big on small screens */
 }
@@ -29,7 +29,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    max-width: 500px; /* Increased width */
+    max-width: 600px; /* Increased width */
     width: 90%; /* Ensure responsiveness */
     padding: 60px; /* More padding for a spacious feel */
     background-color: #fff;
