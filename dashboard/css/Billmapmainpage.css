@@ -210,6 +210,8 @@ footer {
     padding: 10px;
 }
 
+
+
 /* Bill Items */
 .bill-item {
     display: flex;
@@ -289,4 +291,49 @@ footer {
     border-radius: 5px;
     padding: 3px;
     margin-top: 5px;
+}
+
+/**------------------**/
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.button-container button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-bill {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-bill {
+    background-color: #007bff;
+    color: white;
+}
+
+.empty-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.add-bill:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+.edit-bill:hover {
+    background-color: #69aef8;
+}
+.empty-btn:hover {
+    background-color: #5a6268;
 }

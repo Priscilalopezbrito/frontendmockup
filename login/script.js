@@ -32,13 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (loginButton) {
         loginButton.addEventListener("click", function (event) {
             event.preventDefault(); // Prevent default form submission
-            window.location.href = "../dashboard/html/Billmapmainpage.html"; // Redirect to the main dashboard
+            window.location.href = "../dashboard/html/Billmapmainpage.html";
         });
     }
 
     if (logoutButton) {
         logoutButton.addEventListener("click", function () {
-            window.location.href = "../login/login.html"; // Redirect to login page
+            window.location.href = "../../login/login.html";
         });
     }
 });
